@@ -38,7 +38,7 @@ As car might be drifted toward the edges of the road, it has to be able to adjus
 
 The described situations were recorded and stored in the data set in both clockwise and counter-clockwise directions.
 
-![Recovery1](examples/recovery1.jpg)
+![Normal](./examples/recovery1.jpg)
 
 ![Recovery2](examples/recovery2.jpg)
 
