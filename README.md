@@ -30,7 +30,7 @@ A great simulator was provided by UDACITY in order to record good driving data j
 
 The very first step is to drive the car on the road while keeping it in the center and also once in a while try to get the car back to the center of the road when it is getting close to the sides. Also as suggested in the forum, it is beneficial to record data both in clockwise and counter-clockwise directions in order to have more general data. Hence, two lapses of drive in opposite directions were recorded. The speed of the car was kept around 9 mph. Steering angle control was done with the computer mouse which is much more effective than the keyboard. A joystick could be a help in recording a better data set. During the record of the first two lapses, it was tried to change the streering angle as smooth as possible and also to guide the car back to the center of the road whenever it was drifting toward the sides. 
 
-![jpg](center.jpg)
+![jpg]("Model Visualization")
 
 ## Recovering
 
