@@ -30,7 +30,7 @@ A great simulator was provided by UDACITY in order to record good driving data j
 
 The very first step is to drive the car on the road while keeping it in the center and also once in a while try to get the car back to the center of the road when it is getting close to the sides. Also as suggested in the forum, it is beneficial to record data both in clockwise and counter-clockwise directions in order to have more general data. Hence, two lapses of drive in opposite directions were recorded. The speed of the car was kept around 9 mph. Steering angle control was done with the computer mouse which is much more effective than the keyboard. A joystick could be a help in recording a better data set. During the record of the first two lapses, it was tried to change the streering angle as smooth as possible and also to guide the car back to the center of the road whenever it was drifting toward the sides. 
 
-![jpg](./examples/center.jpg)
+![Normal](./examples/center.jpg)
 
 ## Recovering
 
@@ -38,9 +38,9 @@ As car might be drifted toward the edges of the road, it has to be able to adjus
 
 The described situations were recorded and stored in the data set in both clockwise and counter-clockwise directions.
 
-![jpg](recovery1.jpg)
+![Recovery](./examples/recovery1.jpg)
 
-![jpg](recovery2.jpg)
+![Recovery](./examples/recovery2.jpg)
 
 ## Bridge Recovering
 
@@ -48,7 +48,7 @@ After running a few cases of autonomous drive, it was noted that the car tends t
 
 A set of data was recorded for cases in which the car is close to one edge on the bridge and then drives toward the center and continues on driving straight.
 
-![jpg](bridge.jpg)
+![Bridge Recovery](./examples/bridge.jpg)
 
 ## Summary of Data
 
@@ -74,9 +74,13 @@ Pre-processing of the images are performed within the batch generator except the
 
 All images from left, center and right cameras were flipped and their corresponding steering angles were multiplied by -1. A bias of 0.3 was added to the right camera images and subtracted from the left camera ones to prepar them to be represented as a center camera image.
 
+![Recorded](./examples/normal.jpg)       ![Flipped](./examples/flipped.jpg)
+
 ## Rescaling
 
 All images were rescaled/resized to 32x96x3 to be easier to process. This required a change in the drive.py file to be able to match the model.h5 image file shapes.
+
+![Rescaled](./examples/resized.jpg)
 
 ## Cropping
 
@@ -84,7 +88,7 @@ Top and bottom of each image were cropped in order to only feed the road part of
 
     model.add(Cropping2D(cropping=((12,5), (0,0)), input_shape=(32,96,3)))
     
-![jpg](cropped.jpg)
+![Cropped](./examples/cropped.jpg)
 
 ## Normalization
 
